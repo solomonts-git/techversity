@@ -27,10 +27,13 @@ const Signup = () => {
 
   const handleInput = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
-    localStorage.setItem(
-      "userDetail",
-      JSON.stringify([...prevUser, { firstName, lastName, email, password }])
-    );
+    if (typeof window !== "undefined") {
+      localStorage.setItem(
+        "userDetail",
+
+        JSON.stringify([...prevUser, { firstName, lastName, email, password }])
+      );
+    }
     setFirstName("");
     setLastName("");
     setPassword("");
