@@ -17,7 +17,7 @@ const AboutUs = () => {
         </div>
         <div className="mx-4 py-5">
           <h1 className="font-bold  text-2xl mb-2">
-            Hello, I'm Solomon Tsegaye
+            Hello, I&rsquo;m Solomon Tsegaye
           </h1>
           <h2 className="font-semibold text-xl mb-2">
             Lecturer and Web Developer
