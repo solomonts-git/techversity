@@ -23,14 +23,15 @@ const Signup = () => {
       ])
     );
   }, []);
-  const prevUser = JSON.parse(localStorage.getItem("userDetail") as string);
+  // const prevUser = JSON.parse(localStorage.getItem("userDetail") as string);
 
   const handleInput = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
     if (typeof window !== "undefined") {
+      const prevUser = JSON.parse(localStorage.getItem("userDetail") as string);
+
       localStorage.setItem(
         "userDetail",
-
         JSON.stringify([...prevUser, { firstName, lastName, email, password }])
       );
     }
