@@ -22,7 +22,7 @@ const ViewCourses = () => {
                 courseName: string;
                 department: string;
               }) => (
-                <tr key={course.courseCode}>
+                <tr key={++ord}>
                   <td>{++ord}</td>
                   <td>{course.courseCode}</td>
                   <td>{course.courseName}</td>

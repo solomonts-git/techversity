@@ -18,7 +18,7 @@ const ViewRegisteredStudents = () => {
           <tbody>
             {students!.map(
               (student: { studentId: string; studentName: string }) => (
-                <tr key={student.studentId}>
+                <tr key={++ord}>
                   <td>{++ord}</td>
                   <td>{student.studentId}</td>
                   <td>{student.studentName}</td>

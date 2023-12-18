@@ -17,7 +17,7 @@ const ViewDepartments = () => {
           </thead>
           <tbody>
             {departments!.map((department: { departmentName: string }) => (
-              <tr key={department.departmentName}>
+              <tr key={++ord}>
                 <td>{++ord}</td>
                 <td>{department.departmentName}</td>
               </tr>
